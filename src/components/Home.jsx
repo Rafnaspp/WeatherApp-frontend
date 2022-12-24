@@ -23,13 +23,7 @@ const Home = () => {
   return (
     <>
     <nav>{<Nav/>}</nav>
-  <div className='base'>
-      <img onClick={()=>{setStar({one:current,two:red,three:red,four:red,five:red})}}  src={star.one}/>
-      <img onClick={()=>{setStar({one:yellow,two:current,three:red,four:red,five:red})}} src={star.two}/>
-      <img onClick={()=>{setStar({one:yellow,two:yellow,three:current,four:red,five:red})}} src={star.three} />
-      <img onClick={()=>{setStar({one:yellow,two:yellow,three:yellow,four:current,five:red})}} src={star.four} />
-      <img onClick={()=>{setStar({one:yellow,two:yellow,three:yellow,four:yellow,five:current})}} src={star.five} />
-    </div>
+  
    
     </>
     

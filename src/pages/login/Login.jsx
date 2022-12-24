@@ -3,10 +3,12 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../login/Login.scss";
 import axios from "axios";
+import { useDispatch } from "react-redux";
 
 const Login = () => {
   const [data, setData] = useState({ email: "", password: "" });
   const [result, setResult] = useState([""]);
+  const dispatch =useDispatch
 
   const navigate = useNavigate();
 
@@ -18,9 +20,12 @@ const Login = () => {
   const toSingUp = () => {
     navigate("/signup");
   };
-  const handleSubmit = (e) => {
+  const handleSubmit =(e) => {
     e.preventDefault();
-    axios.post("http://localhost:4000/login",data)
+    axios.post("http://localhost:4000/login",data).then((res)=>{
+          console.log("AUTHHHH",res.data);
+          dispatch({type:"LOGIN_USER",data:res.data})
+    })
   };
 
   return (

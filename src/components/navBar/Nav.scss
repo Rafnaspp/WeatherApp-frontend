@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background-color: cyan;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    padding-left: 500px;
+}
+
+header a{
+    text-decoration: none;
+    margin-right: 20px;
+    padding-left: 30px;
+}
+
+@media (max-width:600px){
+    header{
+        width: 100%;
+        background-color: rgb(212, 116, 14);
+        padding: 0;
+        position: absolute;
+        top: 0;
+        // padding-left: 500px;
+    }
+    header a{
+        text-decoration: none;
+        margin: 0;
+        // margin-right: 20px;
+        // padding-left: 30px;
+    }
+    nav{
+        // text-align: center;
+    }
+}
+
+nav{
+    text-align: center;
+}
+ 
+.nya{
+    width: 1px;
+    color: red;
+}
+
+

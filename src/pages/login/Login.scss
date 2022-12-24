@@ -1,0 +1,96 @@
+.login-container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(cyan,blue);
+    display: flex;
+    padding: 2em;
+    justify-content: space-around;
+}
+
+.welcome-section{
+    margin: 30px;
+    width: 50vw;
+    height: 50vh;
+}
+
+.welcome-section h1{
+    color: white;
+}
+
+.welcome-section img{
+    width: 40%;
+}
+
+.form-section{
+    margin: 40px;
+    width: 400px;
+    padding: 40px;
+    border-radius: 40px;
+    height: fit-content;
+    background-color: white;
+    text-align: center;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-bottom: 14px;
+}
+
+.input-group input{
+    outline: none;
+    padding: 3px;
+}
+
+.form-section button{
+    border-radius: 3px;
+    border: none;
+    padding: 9px;
+    background-color: rgb(38, 224, 237);
+    color: rgb(251, 251, 251);
+    cursor: pointer;
+}
+
+.form-section p{
+    cursor: pointer;
+}
+
+@media (max-width :530px){
+    .login-container{
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(cyan,blue);
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        padding-top: 240px;
+        justify-content: none;
+    }
+    .welcome-section{
+        // display: none;
+        margin: 0px;
+        padding: 30px;
+        width: 100vw;
+        height: 50vh;
+    }
+    .welcome-section p{
+        display: none;
+    }
+    .welcome-section img{
+        display: none;
+    }
+    .form-section{
+        margin: 5em;
+        margin-bottom: 18em;
+        width: 15em;
+        padding: 40px;
+        border-radius: 40px;
+        height: fit-content;
+        background-color: white;
+        text-align: center;
+    }
+    
+}
+
+

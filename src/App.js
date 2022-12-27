@@ -12,14 +12,13 @@ import { useSelector } from 'react-redux';
 
 function App() {
 
-  const user = useSelector((state)=>state.authData)
-  // const user = localStorage.getItem("profile")
-  console.log(user);
+
+const user = {
+  
+}
 
 
-
-
-  console.log(user);
+ 
 
   return (
     <div className="App">

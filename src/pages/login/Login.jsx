@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 const Login = () => {
   const [data, setData] = useState({ email: "", password: "" });
   const [result, setResult] = useState([""]);
-  const dispatch =useDispatch
+  const dispatch =useDispatch()
 
   const navigate = useNavigate();
 
@@ -24,6 +24,7 @@ const Login = () => {
     e.preventDefault();
     axios.post("http://localhost:4000/login",data).then((res)=>{
           console.log("AUTHHHH",res.data);
+          localStorage.setItem("profile",JSON.stringify(res.data))
           dispatch({type:"LOGIN_USER",data:res.data})
     })
   };
